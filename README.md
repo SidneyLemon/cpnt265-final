@@ -2,7 +2,7 @@
 
 Author: Sidney Lemon
 
-Live Site Link:
+Live Site Link: https://cpnt265-final.vercel.app/
 
 # List the author and links to any Attributions for code and/or assets you used that are not your own;
 

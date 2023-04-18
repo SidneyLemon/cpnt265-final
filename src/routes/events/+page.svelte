@@ -113,6 +113,7 @@
     border-radius: 2rem;
     text-align: center;
     font-size: large;
+    color: black;
 
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     background: linear-gradient(
@@ -121,7 +122,6 @@
       #fce40b,
       rgb(179, 10, 10)
     );
-    color: white;
   }
   h1 {
     color: white;

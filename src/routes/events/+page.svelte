@@ -11,12 +11,12 @@
         const eased = elasticOut(t);
 
         return `
-          transform: scale(${eased}) rotate(${eased * 1080}deg);
-          color: hsl(
-            ${Math.trunc(t * 360)},
-            ${Math.min(100, 1000 - 1000 * t)}%,
-            ${Math.min(50, 500 - 500 * t)}%
-          );`;
+        transform: scale(${eased}) rotate(${eased * 1080}deg);
+        color: hsl(
+          ${Math.trunc(t * 360)},
+          ${Math.min(100, 1000 - 1000 * t)}%,
+          ${Math.min(50, 500 - 500 * t)}%
+        );`;
       },
       outro: (node, { duration }) => {
         return {
@@ -25,12 +25,12 @@
             const eased = elasticOut(1 - t);
 
             return `
-              transform: scale(${eased}) rotate(${eased * 1080}deg);
-              color: hsl(
-                ${Math.trunc((1 - t) * 360)},
-                ${Math.min(100, 1000 - 1000 * (1 - t))}%,
-                ${Math.min(50, 500 - 500 * (1 - t))}%
-              );`;
+            transform: scale(${eased}) rotate(${eased * 1080}deg);
+            color: hsl(
+              ${Math.trunc((1 - t) * 360)},
+              ${Math.min(100, 1000 - 1000 * (1 - t))}%,
+              ${Math.min(50, 500 - 500 * (1 - t))}%
+            );`;
           },
         };
       },
@@ -39,12 +39,21 @@
 </script>
 
 {#if visible}
-  <div class="centered" in:spin={{ duration: 8000 }} out:fade>
-    <span>PIZZA PARTY!</span>
+  <div class="centered" in:spin={{ duration: 3000 }} out:fade>
+    <span>BOOK!</span>
+  </div>
+
+  <div class="centered" in:fade={{ duration: 8000 }} out:fade>
+    <span>
+      <button class="cta">
+        <a href="contact">Get in Touch!</a>
+      </button></span
+    >
   </div>
 {/if}
 
 <main>
+  <h1>Book an Event!</h1>
   <p>
     Welcome to our events page, where you can find all the latest happenings at
     our pizza restaurant. From pizza-making classes to live music nights, we
@@ -59,25 +68,20 @@
     exciting things happening at our restaurant. We can't wait to see you at our
     next event and serve you our delicious pizzas!
   </p>
-  <div class="button-container">
-    <button class="cta">
-      <a href="contact">Get in Touch!</a>
-    </button>
-  </div>
 </main>
 
 <style>
   .centered {
     position: absolute;
-    left: 25%;
-    top: 50%;
+    left: 50%;
+    top: 80%;
     transform: translate(-50%, -50%);
   }
 
   span {
     position: absolute;
     transform: translate(-50%, -50%);
-    font-size: 5em;
+    font-size: 3em;
   }
 
   .button-container {
@@ -85,16 +89,47 @@
     margin-top: -7.5%;
     margin-right: 55%;
   }
-  p {
-    margin-top: 10rem;
-    margin-left: 40rem;
-    padding-right: 1rem;
-    width: 40%;
-    padding: 2rem;
+  button {
+    width: 8rem;
+    background-color: white;
     border-radius: 1rem;
+  }
+
+  main {
+    background: black;
+    width: 100%;
+    height: 42rem;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  p {
+    margin-top: 2rem;
+    margin-left: 12.5rem;
+    padding-top: 5rem;
+    padding-right: 1rem;
+    width: 65%;
+    padding: 2rem;
+    border-radius: 2rem;
     text-align: center;
+    font-size: large;
 
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    background-color: rgb(179, 10, 10);
+    background: linear-gradient(
+      to right,
+      rgb(179, 10, 10),
+      #fce40b,
+      rgb(179, 10, 10)
+    );
+    color: white;
+  }
+  h1 {
+    color: white;
+    margin-top: 1rem;
+    margin-left: 0rem;
+    padding: 1rem;
+    text-align: center;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    letter-spacing: 0.2em;
   }
 </style>

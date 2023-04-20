@@ -8,6 +8,11 @@
   <a href={pizza.url} target="_blank">
     <h3>{pizza.title}</h3>
     <p>{pizza.description}</p>
+    <p>Price: {pizza.price}</p>
+
+    <a href={pizza.url}>
+      <button>Buy Now!</button>
+    </a>
   </a>
 </article>
 

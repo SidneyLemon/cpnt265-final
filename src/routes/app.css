@@ -38,7 +38,7 @@ header {
 
 footer {
   padding: 0.5rem;
-  background: linear-gradient(to right, rgb(179, 10, 10),#fce40b,rgb(179, 10, 10));
+  background: rgb(179, 10, 10);
   text-align: center;
   position: fixed;
   bottom: 0;

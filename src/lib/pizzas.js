@@ -1,3 +1,8 @@
+//**************************************************************
+//1. CARD DATA: 
+//All information displayed on each pizza is added, removed and edited here. Data can be changed as needed and will update each individual pizza.
+//**************************************************************
+
 const pizza1 = {
   id: 'donair',
   images: 'beef-donair.jpg',

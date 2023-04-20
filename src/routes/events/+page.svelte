@@ -36,6 +36,10 @@
       },
     };
   }
+  //************************************************************/
+  //3. SVELTE ANIMATIONS:
+  //The two animations below are timed using duration. When the first spinning animation fades out, the second button animation fades in. Upon clicking the button will redirect user to the contact page
+  //************************************************************/
 </script>
 
 {#if visible}

@@ -15,6 +15,7 @@
     background-size: cover;
     background-position: center;
   }
+
   .cta {
     max-width: 50ch;
     border: 20px rgb(241, 238, 238);

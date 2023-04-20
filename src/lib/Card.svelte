@@ -1,5 +1,10 @@
 <script>
   export let pizza;
+  //*****************************************************************/
+  //2. MENU CARDS:
+  //This is how the information from the data.js file is displayed on the browser within each individual card. Each tag is calling from each individual piece of data.
+  //CSS Styles at the bottom of this page change the appearnace of the cards displayed.
+  //*****************************************************************/
 </script>
 
 <article class="card">

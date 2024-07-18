@@ -10,7 +10,7 @@
     align-items: center;
     justify-content: center;
     min-height: 75vh;
-    background-image: url(/veggie.jpg);
+    background-image: url(/hawaiian.jpg);
     margin: 0;
     background-size: cover;
     background-position: center;
@@ -18,9 +18,9 @@
 
   .cta {
     max-width: 50ch;
-    border: 20px rgb(241, 238, 238);
-    border-radius: 1rem;
-    padding: 2rem;
+    /* border: 20px white; */
+    border-radius: 2rem;
+    padding: 1rem;
     background-color: white;
     text-decoration: none;
   }

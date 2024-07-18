@@ -15,7 +15,7 @@
       type="text"
       name="name"
       id="full-name"
-      placeholder="First and Last"
+      placeholder="name"
       required=""
     />
     <label for="email-address">Email Address</label>
@@ -23,7 +23,7 @@
       type="email"
       name="_replyto"
       id="email-address"
-      placeholder="email@domain.tld"
+      placeholder="email"
       required=""
     />
     <label for="message">Message</label>
@@ -31,7 +31,7 @@
       rows="5"
       name="message"
       id="message"
-      placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus."
+      placeholder="message"
       required=""
     />
     <input
@@ -40,8 +40,8 @@
       id="email-subject"
       value="Contact Form Submission"
     />
+    <input type="submit" value="Submit" />
   </fieldset>
-  <input type="submit" value="Submit" />
 </form>
 
 <style>
